@@ -11,7 +11,7 @@ function setData(){
 	secondHand.style.transform = `rotate(${secondsDegree}deg)`;
 
 	const minutes = now.getMinutes();
-	const minsDegree = ((minutes/60)*360)+ ((seconds / 60) * 6) + 90;
+	const minsDegree = (minutes * 6) + 90;
 	minsHand.style.transform = `rotate(${minsDegree}deg)`;
 
 	const hours = now.getHours();
